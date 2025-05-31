@@ -1,3 +1,5 @@
+import i18n from "./i18n";
+
 export const RULES = {
     isPath: (value: string) => {
         const pathRegex = /^([a-zA-Z]:\\|\/)([\w\s\-\.]+[\\\/]?)*$/;
@@ -6,9 +8,16 @@ export const RULES = {
         }
 
         if (!pathRegex.test(value)) {
-            return "请输入路径";
+            return i18n.global.t('rules.path');
         }
 
         return true;
     }
+}
+
+export function anyFilter() {
+    return {
+        name: i18n.global.t('any-filter'),
+        extensions: ['*'],
+    };
 }
