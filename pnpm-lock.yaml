@@ -14,12 +14,15 @@ importers:
       '@tauri-apps/api':
         specifier: ^2
         version: 2.5.0
+      '@tauri-apps/plugin-dialog':
+        specifier: ~2.2.2
+        version: 2.2.2
       '@tauri-apps/plugin-opener':
         specifier: ^2
         version: 2.2.7
       '@tauri-apps/plugin-process':
-        specifier: git+https://github.com/tauri-apps/tauri-plugin-process.git
-        version: git+https://github.com/tauri-apps/tauri-plugin-process.git#736e2f4f554857b601751cb53bb4da05b2c2f1d8
+        specifier: ~2
+        version: 2.2.1
       vue:
         specifier: ^3.5.13
         version: 3.5.14(typescript@5.6.3)
@@ -545,12 +548,14 @@ packages:
     engines: {node: '>= 10'}
     hasBin: true
 
+  '@tauri-apps/plugin-dialog@2.2.2':
+    resolution: {integrity: sha512-Pm9qnXQq8ZVhAMFSEPwxvh+nWb2mk7LASVlNEHYaksHvcz8P6+ElR5U5dNL9Ofrm+uwhh1/gYKWswK8JJJAh6A==}
+
   '@tauri-apps/plugin-opener@2.2.7':
     resolution: {integrity: sha512-uduEyvOdjpPOEeDRrhwlCspG/f9EQalHumWBtLBnp3fRp++fKGLqDOyUhSIn7PzX45b/rKep//ZQSAQoIxobLA==}
 
-  '@tauri-apps/plugin-process@git+https://github.com/tauri-apps/tauri-plugin-process.git#736e2f4f554857b601751cb53bb4da05b2c2f1d8':
-    resolution: {commit: 736e2f4f554857b601751cb53bb4da05b2c2f1d8, repo: https://github.com/tauri-apps/tauri-plugin-process.git, type: git}
-    version: 2.2.1
+  '@tauri-apps/plugin-process@2.2.1':
+    resolution: {integrity: sha512-cF/k8J+YjjuowhNG1AboHNTlrGiOwgX5j6NzsX6WFf9FMzyZUchkCgZMxCdSE5NIgFX0vvOgLQhODFJgbMenLg==}
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -1548,11 +1553,15 @@ snapshots:
       '@tauri-apps/cli-win32-ia32-msvc': 2.5.0
       '@tauri-apps/cli-win32-x64-msvc': 2.5.0
 
+  '@tauri-apps/plugin-dialog@2.2.2':
+    dependencies:
+      '@tauri-apps/api': 2.5.0
+
   '@tauri-apps/plugin-opener@2.2.7':
     dependencies:
       '@tauri-apps/api': 2.5.0
 
-  '@tauri-apps/plugin-process@git+https://github.com/tauri-apps/tauri-plugin-process.git#736e2f4f554857b601751cb53bb4da05b2c2f1d8':
+  '@tauri-apps/plugin-process@2.2.1':
     dependencies:
       '@tauri-apps/api': 2.5.0
 

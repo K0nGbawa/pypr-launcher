@@ -12,8 +12,9 @@
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^6.0.8",
     "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "~2.2.2",
     "@tauri-apps/plugin-opener": "^2",
-    "@tauri-apps/plugin-process": "git+https://github.com/tauri-apps/tauri-plugin-process.git",
+    "@tauri-apps/plugin-process": "~2",
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.4",
     "vue-route": "^1.5.1",
